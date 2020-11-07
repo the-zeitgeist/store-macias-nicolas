@@ -1,0 +1,2 @@
+body{min-height:100vh;max-width:100%;margin:0;overflow:hidden;font-family:Geneva,Arial,Helvetica,sans-serif;flex-direction:column}.row,body{display:flex}.row{flex-direction:row}.column{display:flex;flex-direction:column}.center{display:flex;justify-content:center;align-items:center}.badge{margin:0 .5rem;padding:1rem;border-radius:100px;background-color:#ededed}.bar-container{padding:1rem;justify-content:space-between;align-items:center}p{color:#616161;font-size:24px;margin:0 .2rem}
+/*# sourceMappingURL=main.54443db9.chunk.css.map */
