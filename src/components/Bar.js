@@ -1,4 +1,3 @@
-import { Spin } from 'antd'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Badge from './Badge';
 import kite from '../assets/aerolab-logo.svg'

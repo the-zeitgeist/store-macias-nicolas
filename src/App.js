@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { getUser } from './actions/index';
 import { connect } from 'react-redux';
 import Bar from './components/Bar';
+import Banner from './components/Banner';
 import store from './store';
 import './App.css';
 
@@ -24,6 +25,7 @@ function App({ getUser }) {
   return (
     <div>
       <Bar user={user}/>
+      <Banner />
     </div>
   )
 }

@@ -1,0 +1,30 @@
+.banner {
+  background-image: url('../assets/header-x1.png');
+  background-size: 100%, auto, contain;
+  background-repeat: no-repeat;
+  min-height: 22rem;
+  padding: 0 5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+p.title {
+  color: white;
+  font-weight: bold;
+  font-size: 64px
+}
+
+@media screen and (max-width: 900px) {
+  .banner {
+    min-height: 15rem;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    min-height: 10rem;
+    padding: 0 1rem;
+  }
+}
