@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/store-macias-nicolas/static/css/main.ea1455b2.chunk.css",
+    "main.js": "/store-macias-nicolas/static/js/main.403065f1.chunk.js",
+    "main.js.map": "/store-macias-nicolas/static/js/main.403065f1.chunk.js.map",
+    "runtime-main.js": "/store-macias-nicolas/static/js/runtime-main.07f3fe7a.js",
+    "runtime-main.js.map": "/store-macias-nicolas/static/js/runtime-main.07f3fe7a.js.map",
+    "static/js/2.295c9f47.chunk.js": "/store-macias-nicolas/static/js/2.295c9f47.chunk.js",
+    "static/js/2.295c9f47.chunk.js.map": "/store-macias-nicolas/static/js/2.295c9f47.chunk.js.map",
+    "static/js/3.d9bcf7b0.chunk.js": "/store-macias-nicolas/static/js/3.d9bcf7b0.chunk.js",
+    "static/js/3.d9bcf7b0.chunk.js.map": "/store-macias-nicolas/static/js/3.d9bcf7b0.chunk.js.map",
+    "index.html": "/store-macias-nicolas/index.html",
+    "static/css/main.ea1455b2.chunk.css.map": "/store-macias-nicolas/static/css/main.ea1455b2.chunk.css.map",
+    "static/js/2.295c9f47.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.295c9f47.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.07f3fe7a.js",
+    "static/js/2.295c9f47.chunk.js",
+    "static/css/main.ea1455b2.chunk.css",
+    "static/js/main.403065f1.chunk.js"
+  ]
+}
