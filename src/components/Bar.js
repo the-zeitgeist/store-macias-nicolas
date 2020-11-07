@@ -11,7 +11,7 @@ const Bar = ({ user }) => {
       <p className="center">{user.name}</p>
       <div className="center">
         <Badge>
-          <p>{user.points}</p>
+          <p>{user.points.toLocaleString()}</p>
           <img src={coin} alt="coin" height="24" width="24" />
         </Badge>
       </div>

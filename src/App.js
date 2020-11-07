@@ -1,22 +1,24 @@
 import { useEffect, useState } from 'react';
-import { getUser } from './actions/index';
+import { getUser, getProducts } from './actions/index';
 import { connect } from 'react-redux';
 import Bar from './components/Bar';
 import Banner from './components/Banner';
 import store from './store';
 import './App.css';
 
-function App({ getUser }) {
+
+function App({ getUser, getProducts }) {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
     getUser();
-  }, []);
+    getProducts();
+  }, [getProducts, getUser]);
 
   useEffect(() => {
     return store.subscribe(() => {
-      const { user } = store.getState();
-      setUser(user)
+      const _user = store.getState().user;
+      setUser(_user)
     })
   }, [])
 
@@ -30,4 +32,4 @@ function App({ getUser }) {
   )
 }
 
-export default connect(null, { getUser})(App);
+export default connect(null, { getUser, getProducts })(App);
