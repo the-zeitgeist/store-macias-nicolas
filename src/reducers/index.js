@@ -1,14 +1,22 @@
-const initialState = [];
+const initialState = {
+  user: null
+};
 
 const functionsCreator = (newState) => ({
-  show: () => null
+  SET_USER: ({ user }) => {
+    newState['user'] = user;
+    return newState;
+  }
 })
 
 const reducer = (state = initialState, action) => {
+  console.log(action)
+
   const { type } = action;
   const processAction = functionsCreator(state);
 
-  return processAction[type](action);
+  const reduce = processAction[type];
+  return reduce ? reduce(action) : state;
 }
 
 export default reducer

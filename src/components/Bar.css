@@ -1,0 +1,13 @@
+.bar-container {
+  padding: 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+p {
+  color: #616161;
+  font-size: 24px;
+  margin: 0 0.2rem;
+}
+
