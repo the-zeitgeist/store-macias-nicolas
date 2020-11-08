@@ -3,12 +3,14 @@ import { getUser, getProducts } from './actions/index';
 import { connect } from 'react-redux';
 import Bar from './components/Bar';
 import Banner from './components/Banner';
+import ProductList from './components/ProductList';
 import store from './store';
 import './App.css';
 
 
 function App({ getUser, getProducts }) {
   const [user, setUser] = useState(null);
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     getUser();
@@ -18,7 +20,10 @@ function App({ getUser, getProducts }) {
   useEffect(() => {
     return store.subscribe(() => {
       const _user = store.getState().user;
-      setUser(_user)
+      const _products = store.getState().products;
+      setUser(_user);
+      console.log(_products);
+      setProducts(_products);
     })
   }, [])
 
@@ -28,6 +33,7 @@ function App({ getUser, getProducts }) {
     <div>
       <Bar user={user}/>
       <Banner />
+      <ProductList products={products}/>
     </div>
   )
 }

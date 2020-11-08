@@ -1,0 +1,31 @@
+.product-container {
+  width: 240px;
+  box-shadow: 1px 1px 5px 0 black;
+  margin: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.product-image {
+  border-bottom: 1px solid grey;
+  margin: 0.5rem 0;
+}
+
+.text-block {
+  width: 80%;
+  align-items: stretch;
+  padding: 1rem 0;
+}
+
+.category, .name {
+  margin: 0;
+}
+
+.category {
+  color: #a3a3a3;
+}
+
+.name {
+  color: #616161;
+  font-size: 18px;
+}
+

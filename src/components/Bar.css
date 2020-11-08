@@ -5,7 +5,7 @@
   align-items: center;
 }
 
-p {
+.bar-text {
   color: #616161;
   font-size: 24px;
   margin: 0 0.2rem;

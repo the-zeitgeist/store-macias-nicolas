@@ -1,0 +1,6 @@
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  background-color: red;
+}

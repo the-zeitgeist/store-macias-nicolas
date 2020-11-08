@@ -38,7 +38,6 @@ export const getProducts = () => (dispatch) => {
   axios.get(url)
     .then(({data}) => data)
     .then((products) => {
-      console.log(products);
       dispatch(setProducts(products));
     })
     .catch((err) => console.log(err))

@@ -5,14 +5,24 @@ const initialState = {
 
 const functionsCreator = (newState) => ({
   SET_USER: ({ user }) => {
-    newState['user'] = user;
-    return newState;
+    return {
+      ...newState,
+      user
+    };
   },
-  SET_PRODUCTS: (products) => {
-    newState['products'] = [...products]
-    return newState;
+  SET_PRODUCTS: ({ products}) => {
+    return {
+      ...newState,
+      products: [...products]
+    };
+  },
+  CLEAR_USER: () => {
+    return {
+      ...newState,
+      user: null
+    }
   }
-})
+});
 
 const reducer = (state = initialState, action) => {
   console.log(action)

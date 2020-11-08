@@ -8,10 +8,10 @@ const Bar = ({ user }) => {
 
   const setUser = () => (user ? (
     <>
-      <p className="center">{user.name}</p>
+      <p className="bar-text center">{user.name}</p>
       <div className="center">
         <Badge>
-          <p>{user.points.toLocaleString()}</p>
+          <p className="bar-text">{user.points.toLocaleString()}</p>
           <img src={coin} alt="coin" height="24" width="24" />
         </Badge>
       </div>
