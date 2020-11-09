@@ -6,11 +6,11 @@
 }
 
 .product-image {
-  border-bottom: 1px solid grey;
   margin: 0.5rem 0;
 }
 
 .text-block {
+  border-top: 2px solid grey;
   width: 80%;
   align-items: stretch;
   padding: 1rem 0;
