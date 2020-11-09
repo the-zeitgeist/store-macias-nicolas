@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/store-macias-nicolas/static/css/main.2cd6f50c.chunk.css",
+    "main.css": "/store-macias-nicolas/static/css/main.8442e195.chunk.css",
     "main.js": "/store-macias-nicolas/static/js/main.5271d445.chunk.js",
     "main.js.map": "/store-macias-nicolas/static/js/main.5271d445.chunk.js.map",
     "runtime-main.js": "/store-macias-nicolas/static/js/runtime-main.4353c888.js",
@@ -10,7 +10,7 @@
     "static/js/3.e806b898.chunk.js": "/store-macias-nicolas/static/js/3.e806b898.chunk.js",
     "static/js/3.e806b898.chunk.js.map": "/store-macias-nicolas/static/js/3.e806b898.chunk.js.map",
     "index.html": "/store-macias-nicolas/index.html",
-    "static/css/main.2cd6f50c.chunk.css.map": "/store-macias-nicolas/static/css/main.2cd6f50c.chunk.css.map",
+    "static/css/main.8442e195.chunk.css.map": "/store-macias-nicolas/static/css/main.8442e195.chunk.css.map",
     "static/js/2.e54b6cc7.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.e54b6cc7.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.0a8fb170.svg": "/store-macias-nicolas/static/media/aerolab-logo.0a8fb170.svg",
     "static/media/coin.b8bc711d.svg": "/store-macias-nicolas/static/media/coin.b8bc711d.svg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.4353c888.js",
     "static/js/2.e54b6cc7.chunk.js",
-    "static/css/main.2cd6f50c.chunk.css",
+    "static/css/main.8442e195.chunk.css",
     "static/js/main.5271d445.chunk.js"
   ]
 }
