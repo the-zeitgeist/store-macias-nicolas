@@ -1,9 +1,9 @@
 import Product from './Product';
 
-const ProductList = ({products}) => (
+const ProductList = ({ products }) => (
   <div className="product-list">
     {products.map((product, i) => (
-      <Product key={`product-${i}`} {...product}/>
+      <Product key={`product-${i}`} {...product} />
     ))}
   </div>
 )

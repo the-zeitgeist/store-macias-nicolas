@@ -22,7 +22,6 @@ function App({ getUser, getProducts }) {
       const _user = store.getState().user;
       const _products = store.getState().products;
       setUser(_user);
-      console.log(_products);
       setProducts(_products);
     })
   }, [])
@@ -31,9 +30,9 @@ function App({ getUser, getProducts }) {
 
   return (
     <div>
-      <Bar user={user}/>
+      <Bar user={user} />
       <Banner />
-      <ProductList products={products}/>
+      <ProductList products={products} />
     </div>
   )
 }

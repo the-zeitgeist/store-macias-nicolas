@@ -1,7 +1,9 @@
 .banner {
   background-image: url('../assets/header-x1.png');
-  background-size: 100%, auto, contain;
+  background-size: auto 100%;
+  background-position: right;
   background-repeat: no-repeat;
+  background-color: #15dbff;
   min-height: 22rem;
   padding: 0 5rem;
 
@@ -12,7 +14,8 @@
 p.title {
   color: white;
   font-weight: bold;
-  font-size: 64px
+  font-size: 64px;
+  text-shadow: 2px 5px 10px black;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,6 +1,6 @@
 import './Badge.css';
 
-const Badge = ({children}) => (
+const Badge = ({ children }) => (
   <div className="badge row center">
     {children}
   </div>
