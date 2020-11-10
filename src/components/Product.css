@@ -13,6 +13,14 @@
   box-shadow: 0 0.5rem 1rem 0 grey;
 }
 
+.purchase {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: blue;
+  z-index: 6;
+}
+
 .product-image {
   margin: 0.5rem 0;
 }
