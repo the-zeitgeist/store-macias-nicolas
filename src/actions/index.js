@@ -25,7 +25,7 @@ export const getUser = () => (dispatch) => {
   const url = `${api_base}/user/me`;
 
   axios.get(url)
-    .then(({data}) => data)
+    .then(({ data }) => data)
     .then((user) => {
       dispatch(setUser(user));
     })
@@ -36,7 +36,7 @@ export const getProducts = () => (dispatch) => {
   const url = `${api_base}/products`;
 
   axios.get(url)
-    .then(({data}) => data)
+    .then(({ data }) => data)
     .then((products) => {
       dispatch(setProducts(products));
     })

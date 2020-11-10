@@ -4,24 +4,18 @@ const initialState = {
 };
 
 const functionsCreator = (newState) => ({
-  SET_USER: ({ user }) => {
-    return {
-      ...newState,
-      user
-    };
-  },
-  SET_PRODUCTS: ({ products}) => {
-    return {
-      ...newState,
-      products: [...products]
-    };
-  },
-  CLEAR_USER: () => {
-    return {
-      ...newState,
-      user: null
-    }
-  }
+  SET_USER: ({ user }) => ({
+    ...newState,
+    user
+  }),
+  SET_PRODUCTS: ({ products }) => ({
+    ...newState,
+    products: [...products]
+  }),
+  CLEAR_USER: () => ({
+    ...newState,
+    user: null
+  })
 });
 
 const reducer = (state = initialState, action) => {

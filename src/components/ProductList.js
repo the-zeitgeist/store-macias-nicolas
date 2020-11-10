@@ -1,4 +1,5 @@
 import Product from './Product';
+import './ProductList.css';
 
 const ProductList = ({ products }) => (
   <div className="product-list">
