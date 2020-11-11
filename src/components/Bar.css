@@ -1,5 +1,6 @@
 .bar-container {
   padding: 1rem;
+  background-color: #fff;
 
   justify-content: space-between;
   align-items: center;

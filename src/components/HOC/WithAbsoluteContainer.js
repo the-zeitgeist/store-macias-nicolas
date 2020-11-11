@@ -1,8 +1,8 @@
 import './WithAbsoluteContainer.css';
 
-const WithAbsoluteContainer = (Component) => (
+const WithAbsoluteContainer = (Component) => (props) => (
   <div className="indicator-container">
-    {Component}
+    <Component {...props} />
   </div>
 );
 

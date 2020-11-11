@@ -10,14 +10,14 @@ const PurchsaseBalance = ({ cost, user }) => {
   const hasEnough = difference >= 0;
 
   if (!user) {
-    return WithAbsoluteContainer(<CircularProgress />)
+    return <CircularProgress />
   }
 
   if (hasEnough) {
-    return WithAbsoluteContainer(<img src={PurchaseImage} alt="buy-blue" width="42" height="42"/>)
+    return <img src={PurchaseImage} alt="buy-blue" width="42" height="42"/>
   }
 
-  return WithAbsoluteContainer(
+  return (
     <div>
       <div className="remaining-container">
         <p className="amount-missing">You need {Math.abs(difference).toLocaleString()}</p>
@@ -28,4 +28,4 @@ const PurchsaseBalance = ({ cost, user }) => {
 
 };
 
-export default WithUser(PurchsaseBalance);
+export default WithUser(WithAbsoluteContainer(PurchsaseBalance));
