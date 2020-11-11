@@ -1,8 +1,9 @@
 .product-container {
-  width: 240px;
-  box-shadow: 0 1px 5px 0 grey;
+  width: 280px;
+  box-shadow: 0 3px 5px 0 grey;
   margin: 0.75rem;
   padding: 0.5rem 0;
+  z-index: 0;
 
   -webkit-transition: 150ms
 }
@@ -10,7 +11,7 @@
 .product-container:hover {
   transform: translateY(-1rem);
   transition: all 350ms;
-  box-shadow: 0 0.5rem 1rem 0 grey;
+  box-shadow: 0 0.5rem 1.25rem 0 grey;
 }
 
 .purchase {

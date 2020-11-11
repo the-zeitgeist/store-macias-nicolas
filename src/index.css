@@ -2,10 +2,11 @@ body {
   min-height: 100vh;
   max-width: 100%;
   margin: 0;
-  /* overflow: hidden; */
   font-family: Geneva, Arial, Helvetica, sans-serif;
   display: flex;
   flex-direction: column;
+
+  background-color: #f9f9f9;
 }
 
 .row {
