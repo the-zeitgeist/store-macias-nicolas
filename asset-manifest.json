@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/store-macias-nicolas/static/css/main.f7e9ce18.chunk.css",
-    "main.js": "/store-macias-nicolas/static/js/main.b1bc0198.chunk.js",
-    "main.js.map": "/store-macias-nicolas/static/js/main.b1bc0198.chunk.js.map",
+    "main.css": "/store-macias-nicolas/static/css/main.211bcf06.chunk.css",
+    "main.js": "/store-macias-nicolas/static/js/main.55a55238.chunk.js",
+    "main.js.map": "/store-macias-nicolas/static/js/main.55a55238.chunk.js.map",
     "runtime-main.js": "/store-macias-nicolas/static/js/runtime-main.b01bb000.js",
     "runtime-main.js.map": "/store-macias-nicolas/static/js/runtime-main.b01bb000.js.map",
-    "static/js/2.ad99d4fe.chunk.js": "/store-macias-nicolas/static/js/2.ad99d4fe.chunk.js",
-    "static/js/2.ad99d4fe.chunk.js.map": "/store-macias-nicolas/static/js/2.ad99d4fe.chunk.js.map",
+    "static/js/2.a81cfa1b.chunk.js": "/store-macias-nicolas/static/js/2.a81cfa1b.chunk.js",
+    "static/js/2.a81cfa1b.chunk.js.map": "/store-macias-nicolas/static/js/2.a81cfa1b.chunk.js.map",
     "static/js/3.e48c57f4.chunk.js": "/store-macias-nicolas/static/js/3.e48c57f4.chunk.js",
     "static/js/3.e48c57f4.chunk.js.map": "/store-macias-nicolas/static/js/3.e48c57f4.chunk.js.map",
     "index.html": "/store-macias-nicolas/index.html",
-    "static/css/main.f7e9ce18.chunk.css.map": "/store-macias-nicolas/static/css/main.f7e9ce18.chunk.css.map",
-    "static/js/2.ad99d4fe.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.ad99d4fe.chunk.js.LICENSE.txt",
+    "static/css/main.211bcf06.chunk.css.map": "/store-macias-nicolas/static/css/main.211bcf06.chunk.css.map",
+    "static/js/2.a81cfa1b.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.a81cfa1b.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.0a8fb170.svg": "/store-macias-nicolas/static/media/aerolab-logo.0a8fb170.svg",
     "static/media/buy-blue.c5c4f01c.svg": "/store-macias-nicolas/static/media/buy-blue.c5c4f01c.svg",
     "static/media/coin.b8bc711d.svg": "/store-macias-nicolas/static/media/coin.b8bc711d.svg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.b01bb000.js",
-    "static/js/2.ad99d4fe.chunk.js",
-    "static/css/main.f7e9ce18.chunk.css",
-    "static/js/main.b1bc0198.chunk.js"
+    "static/js/2.a81cfa1b.chunk.js",
+    "static/css/main.211bcf06.chunk.css",
+    "static/js/main.55a55238.chunk.js"
   ]
 }
