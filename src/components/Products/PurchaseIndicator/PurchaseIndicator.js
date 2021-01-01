@@ -1,8 +1,8 @@
 import CircularProgress from '@material-ui/core/CircularProgress';
-import WithUser from './HOC/WithUser';
-import WithAbsoluteContainer from './HOC/WithAbsoluteContainer';
-import PurchaseImage from '../assets/icons/buy-blue.svg';
-import CoinImage from '../assets/icons/coin.svg';
+import WithUser from  '../../HOC/WithUser';
+import WithAbsoluteContainer from '../../HOC/WithAbsoluteContainer';
+import PurchaseImage from '../../../assets/icons/buy-blue.svg';
+import CoinImage from '../../../assets/icons/coin.svg';
 import './PurchaseIndicator.css';
 
 const PurchsaseBalance = ({ cost, user }) => {

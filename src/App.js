@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { getUser, getProducts } from './actions/index';
 import { connect } from 'react-redux';
-import Bar from './components/Bar';
-import Banner from './components/Banner';
-import ProductList from './components/ProductList';
+import Bar from './components/Bar/Bar';
+import Banner from './components/Banner/Banner';
+import ProductList from './components/Products/ProductList/ProductList';
 import store from './store';
 import './App.css';
 

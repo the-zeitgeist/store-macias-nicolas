@@ -1,7 +1,7 @@
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Badge from './Badge';
-import kite from '../assets/aerolab-logo.svg'
-import coin from '../assets/icons/coin.svg';
+import kite from '../../assets/aerolab-logo.svg'
+import coin from '../../assets/icons/coin.svg';
 import './Bar.css';
 
 const Bar = ({ user }) => {

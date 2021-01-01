@@ -19,7 +19,7 @@ const functionsCreator = (newState) => ({
 });
 
 const reducer = (state = initialState, action) => {
-  console.log(action)
+  console.log(action);
 
   const { type } = action;
   const processAction = functionsCreator(state);

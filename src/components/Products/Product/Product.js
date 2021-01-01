@@ -1,4 +1,4 @@
-import PurchaseIndicator from './PurchaseIndicator';
+import PurchaseIndicator from '../PurchaseIndicator/PurchaseIndicator';
 import './Product.css';
 
 const Product = ({ img, name, category, cost }) => (
