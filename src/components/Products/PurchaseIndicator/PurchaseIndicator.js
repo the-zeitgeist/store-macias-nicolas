@@ -1,31 +1,23 @@
-import CircularProgress from '@material-ui/core/CircularProgress';
-import WithUser from  '../../HOC/WithUser';
+import CanPurchase from './CanPurchase/CanPurchase';
+import ActionButton from './ActionButton/ActionButton';
+import WithUser from '../../HOC/WithUser';
 import WithAbsoluteContainer from '../../HOC/WithAbsoluteContainer';
-import PurchaseImage from '../../../assets/icons/buy-blue.svg';
-import CoinImage from '../../../assets/icons/coin.svg';
 import './PurchaseIndicator.css';
 
-const PurchsaseBalance = ({ cost, user }) => {
+const PurchsaseBalance = ({ cost, user, isHover }) => {
   const difference = (user?.points ?? 0) - cost;
+  // const difference = cost - 1000;
   const hasEnough = difference >= 0;
 
-  if (!user) {
-    return <CircularProgress />
-  }
-
-  if (hasEnough) {
-    return <img src={PurchaseImage} alt="buy-blue" width="42" height="42"/>
-  }
-
-  return (
-    <div>
-      <div className="remaining-container">
-        <p className="amount-missing">You need {Math.abs(difference).toLocaleString()}</p>
-        <img src={CoinImage} alt="coin" width="20" height="20" />
-      </div>
-    </div>
-  )
-
+  return isHover ? (
+    <ActionButton />
+  ) : (
+      <CanPurchase
+        hasEnough={hasEnough}
+        hasUser={!!user}
+        difference={difference}
+      />
+    );
 };
 
 export default WithUser(WithAbsoluteContainer(PurchsaseBalance));
