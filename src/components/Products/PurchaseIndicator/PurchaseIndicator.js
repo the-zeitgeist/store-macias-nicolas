@@ -6,7 +6,7 @@ import './PurchaseIndicator.css';
 
 const PurchsaseBalance = ({ cost, user, isHover }) => {
   const difference = (user?.points ?? 0) - cost;
-  // const difference = cost - 1000;
+  // const difference = cost * -1;
   const hasEnough = difference >= 0;
 
   return isHover ? (
