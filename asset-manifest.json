@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/store-macias-nicolas/static/css/main.d5bf08e4.chunk.css",
-    "main.js": "/store-macias-nicolas/static/js/main.6114ff06.chunk.js",
-    "main.js.map": "/store-macias-nicolas/static/js/main.6114ff06.chunk.js.map",
-    "runtime-main.js": "/store-macias-nicolas/static/js/runtime-main.7222bdcf.js",
-    "runtime-main.js.map": "/store-macias-nicolas/static/js/runtime-main.7222bdcf.js.map",
-    "static/js/2.726b238e.chunk.js": "/store-macias-nicolas/static/js/2.726b238e.chunk.js",
-    "static/js/2.726b238e.chunk.js.map": "/store-macias-nicolas/static/js/2.726b238e.chunk.js.map",
-    "static/js/3.7bdbca7b.chunk.js": "/store-macias-nicolas/static/js/3.7bdbca7b.chunk.js",
-    "static/js/3.7bdbca7b.chunk.js.map": "/store-macias-nicolas/static/js/3.7bdbca7b.chunk.js.map",
+    "main.css": "/store-macias-nicolas/static/css/main.1706a1ec.chunk.css",
+    "main.js": "/store-macias-nicolas/static/js/main.7d3b2687.chunk.js",
+    "main.js.map": "/store-macias-nicolas/static/js/main.7d3b2687.chunk.js.map",
+    "runtime-main.js": "/store-macias-nicolas/static/js/runtime-main.538a0817.js",
+    "runtime-main.js.map": "/store-macias-nicolas/static/js/runtime-main.538a0817.js.map",
+    "static/js/2.fb15b3ea.chunk.js": "/store-macias-nicolas/static/js/2.fb15b3ea.chunk.js",
+    "static/js/2.fb15b3ea.chunk.js.map": "/store-macias-nicolas/static/js/2.fb15b3ea.chunk.js.map",
+    "static/js/3.a8b51fce.chunk.js": "/store-macias-nicolas/static/js/3.a8b51fce.chunk.js",
+    "static/js/3.a8b51fce.chunk.js.map": "/store-macias-nicolas/static/js/3.a8b51fce.chunk.js.map",
     "index.html": "/store-macias-nicolas/index.html",
-    "static/css/main.d5bf08e4.chunk.css.map": "/store-macias-nicolas/static/css/main.d5bf08e4.chunk.css.map",
-    "static/js/2.726b238e.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.726b238e.chunk.js.LICENSE.txt",
+    "static/css/main.1706a1ec.chunk.css.map": "/store-macias-nicolas/static/css/main.1706a1ec.chunk.css.map",
+    "static/js/2.fb15b3ea.chunk.js.LICENSE.txt": "/store-macias-nicolas/static/js/2.fb15b3ea.chunk.js.LICENSE.txt",
     "static/media/aerolab-logo.40b78ac9.svg": "/store-macias-nicolas/static/media/aerolab-logo.40b78ac9.svg",
     "static/media/buy-blue.13783e2a.svg": "/store-macias-nicolas/static/media/buy-blue.13783e2a.svg",
     "static/media/buy-white.3eddcc1e.svg": "/store-macias-nicolas/static/media/buy-white.3eddcc1e.svg",
@@ -19,9 +19,9 @@
     "static/media/Banner.css": "/store-macias-nicolas/static/media/header-x1.b6f067c6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.7222bdcf.js",
-    "static/js/2.726b238e.chunk.js",
-    "static/css/main.d5bf08e4.chunk.css",
-    "static/js/main.6114ff06.chunk.js"
+    "static/js/runtime-main.538a0817.js",
+    "static/js/2.fb15b3ea.chunk.js",
+    "static/css/main.1706a1ec.chunk.css",
+    "static/js/main.7d3b2687.chunk.js"
   ]
 }
