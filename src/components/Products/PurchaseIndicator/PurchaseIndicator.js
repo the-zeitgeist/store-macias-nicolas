@@ -10,7 +10,10 @@ const PurchsaseBalance = ({ cost, user, isHover }) => {
   const hasEnough = difference >= 0;
 
   return isHover ? (
-    <ActionButton />
+    <ActionButton
+      cost={cost}
+      hasEnough={hasEnough}
+    />
   ) : (
       <CanPurchase
         hasEnough={hasEnough}

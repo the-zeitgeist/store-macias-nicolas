@@ -1,7 +1,6 @@
 .action-button-container {
   min-width: 100%;
   min-height: 100%;
-  /* border: 1px solid black; */
   z-index: 7;
   color: #f9f9f9;
   background-color: rgba(37, 187, 241, 0.8);
@@ -26,6 +25,48 @@
 .img-block + img {
   margin: 0;
   padding: 0;
+}
+
+.value,
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.value p {
+  margin: 0;
+  padding: 0 0.2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.coin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button.action-button {
+  z-index: 9;
+  min-width: 220px;
+  color: #616161;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+button.action-button:hover {
+  cursor: pointer;
+}
+
+button.action-button:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem #40b7cd;
 }
 
 @keyframes fadeIn {
