@@ -4,7 +4,7 @@ import WithUser from '../../HOC/WithUser';
 import WithAbsoluteContainer from '../../HOC/WithAbsoluteContainer';
 import './PurchaseIndicator.css';
 
-const PurchsaseBalance = ({ cost, user, isHover }) => {
+const PurchsaseBalance = ({ cost, user, isHover, productId }) => {
   const difference = (user?.points ?? 0) - cost;
   // const difference = cost * -1;
   const hasEnough = difference >= 0;
@@ -13,6 +13,7 @@ const PurchsaseBalance = ({ cost, user, isHover }) => {
     <ActionButton
       cost={cost}
       hasEnough={hasEnough}
+      productId={productId}
     />
   ) : (
       <CanPurchase

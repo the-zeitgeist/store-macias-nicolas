@@ -1,0 +1,49 @@
+.redem-container {
+  padding: 1rem 2rem 0;
+}
+
+.product-description {
+  display: flex;
+  justify-content: center;
+}
+
+.card-description {
+  background-color: #ededed;
+  display: flex;
+  padding: 1rem 5rem;
+  border-radius: 1rem;
+}
+
+.card-description p,
+.card-description h3 {
+  font-size: 2rem;
+  margin: 0.2rem;
+}
+
+.card-description h5 {
+  font-size: 1.5rem;
+  margin: 0;
+  align-self: center;
+}
+
+.redeem-information {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.button-container {
+  align-self: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.return-button {
+  align-self: center;
+  background-color: #ededed;
+}
+
+.return-button {
+  margin: 2rem 0;
+}

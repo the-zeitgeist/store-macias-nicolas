@@ -1,10 +1,23 @@
 import PurchaseImage from '../../../../assets/icons/buy-white.svg';
 import NumberFormat from '../../../Reusable/NumberFormat';
 import coin from '../../../../assets/icons/coin.svg';
+import { Link } from 'react-router-dom';
 import './ActionButton.css';
 
-const ActionButton = ({ cost, hasEnough }) => {
-  const actionText = hasEnough ? 'Redeem now' : 'Get coins';
+const ActionButton = ({ cost, hasEnough, productId }) => {
+  const actionCollection = {
+    Redeem: {
+      text: 'Redeem now',
+      linkTo: `/redeem/${productId}`
+    },
+    Coins: {
+      text: 'Get coins'
+    }
+  }
+
+  const actionName = hasEnough ? 'Redeem' : 'Coins';
+  const action = actionCollection[actionName]
+
   return <div className="action-button-container">
     <div className="img-block">
       <img src={PurchaseImage} alt="buy-white" width="48" height="48" />
@@ -18,7 +31,11 @@ const ActionButton = ({ cost, hasEnough }) => {
       </div>
     </div>
     <div className="button-container">
-      <button className="action-button" onClick={() => console.log('click')}>{actionText}</button>
+      <Link to={action.linkTo}>
+        <button className="action-button" onClick={() => console.warn('click')}>
+          {action.text}
+        </button>
+      </Link>
     </div>
   </div>
 }

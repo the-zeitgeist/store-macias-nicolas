@@ -6,11 +6,14 @@
   z-index: 0;
   background-color: #ffffff;
 
+}
+
+.transition {
   transition: 150ms;
   -webkit-transition: 150ms
 }
 
-.product-container:hover {
+.transition:hover {
   transform: translateY(-1rem);
   transition: all 350ms;
   box-shadow: 0 0.5rem 1.25rem 0 grey;

@@ -1,6 +1,4 @@
-const NumberFormart = ({ number, separator, distance }) => {
-  if (!number || Number.isNaN(number)) { return <></> }
-
+export const calculateResult = ({ number, separator, distance }) => {
   const splitBy = separator || ',';
   const splitEach = distance || 3;
   const result = number.toString().split('').reverse().reduce((acc, num, i, _this) => {
@@ -9,6 +7,14 @@ const NumberFormart = ({ number, separator, distance }) => {
     const newValue = `${includesSeparator ? splitBy : ''}${num}`
     return [newValue, ...acc]
   }, []).join('');
+
+  return result
+}
+
+const NumberFormart = ({ number, separator, distance }) => {
+  if (!number || Number.isNaN(number)) { return <></> }
+
+ const result = calculateResult({ number, separator, distance })
 
   return <>{result}</>
 }

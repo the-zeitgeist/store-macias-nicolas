@@ -51,21 +51,9 @@
 button.action-button {
   z-index: 9;
   min-width: 220px;
-  color: #616161;
-  margin: 0;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 1.5rem;
-  background-color: #fff;
-  font-size: 1.5rem;
-}
-
-button.action-button:hover {
-  cursor: pointer;
 }
 
 button.action-button:focus {
-  outline: none;
   box-shadow: 0 0.2rem 0.2rem 0.2rem #40b7cd;
 }
 

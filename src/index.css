@@ -24,3 +24,22 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+button {
+  color: #616161;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem #dedede;
+}
