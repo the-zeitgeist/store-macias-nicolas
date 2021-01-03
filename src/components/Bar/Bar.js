@@ -1,13 +1,25 @@
+import { useState, useEffect } from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import Badge from './Badge';
 import kite from '../../assets/aerolab-logo.svg'
 import coin from '../../assets/icons/coin.svg';
 import NavitageToHome from '../Reusable/NavitageToHome';
+import store from '../../store';
 import './Bar.css';
 
-const Bar = ({ user }) => {
+const Bar = () => {
+  const [user, setUser] = useState(null)
 
-  const setUser = () => (user ? (
+  useEffect(() => {
+    const _user = store.getState().user;
+    setUser(_user);
+    return store.subscribe(() => {
+      const _user = store.getState().user;
+      setUser(_user);
+    });
+  }, []);
+
+  const setUsr = () => (user ? (
     <>
       <p className="bar-text center">{user.name}</p>
       <div className="center">
@@ -28,7 +40,7 @@ const Bar = ({ user }) => {
     <div className="bar-container row">
       <NavitageToHome Render={() => <img src={kite} alt="kite" height="36" width="36" />} />
       <div className="row">
-        {setUser()}
+        {setUsr()}
       </div>
     </div>
   );

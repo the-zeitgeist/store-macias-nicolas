@@ -17,7 +17,7 @@ const ResponseMessage = ({ success, onRetry, history }) => {
   return (
     <div className="center column">
       <div className="message-card success-color">
-        <h1>{success ? 'Success' : 'Error'}</h1>
+        <h1>{success ? 'Success' : 'Oops'}</h1>
         <AnimatedFace success={success} />
         <p className="redem-message">{message}</p>
         <button className="action-button" onClick={action}>

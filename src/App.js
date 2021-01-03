@@ -9,7 +9,6 @@ import './App.css';
 
 
 function App({ getUser, getProducts }) {
-  const [user, setUser] = useState(null);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -19,16 +18,14 @@ function App({ getUser, getProducts }) {
 
   useEffect(() => {
     return store.subscribe(() => {
-      const _user = store.getState().user;
       const _products = store.getState().products;
-      setUser(_user);
       setProducts(_products);
     })
   }, [])
 
   return (
     <div>
-      <Bar user={user} />
+      <Bar />
       <Banner />
       <ProductList products={products} />
     </div>

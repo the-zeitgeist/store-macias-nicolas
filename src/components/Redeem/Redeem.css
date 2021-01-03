@@ -15,8 +15,21 @@ h3.title {
   background-color: rgba(37, 187, 241, 0.9);
   color: white;
   display: flex;
+  flex-direction: row;
   padding: 1rem 5rem;
   border-radius: 1rem;
+}
+
+@media (max-width: 600px) {
+  .card-description {
+    padding: 0.5rem 1rem;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .redem-container {
+    padding: 0;
+  }
 }
 
 .card-description p,
@@ -33,7 +46,6 @@ h3.title {
 
 .redeem-information {
   display: flex;
-  min-height: 100%;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -55,4 +67,8 @@ h3.title {
 
 .confirm-button {
   min-width: 100px;
+}
+
+.confirm-button:focus {
+  box-shadow: 0 0.2rem 0.2rem 0.2rem grey;
 }

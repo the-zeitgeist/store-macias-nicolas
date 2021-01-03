@@ -1,0 +1,19 @@
+.register {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ededed;
+
+  padding: 0.5rem;
+  margin: 0.3rem 0;
+  border: grey solid 1px;
+}
+
+p.cost-description {
+  font-size: 0.9rem;
+}
+
+.product-description h4,
+.product-description p {
+  margin: 0;
+  padding: 0;
+}

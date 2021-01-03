@@ -15,7 +15,7 @@
 }
 
 button.action-button:focus {
-  box-shadow: 0 0.2rem 0.2rem 0.2rem darkred;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem grey;
 }
 
 p.redem-message {

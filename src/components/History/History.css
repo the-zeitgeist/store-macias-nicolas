@@ -1,0 +1,13 @@
+.register-container {
+  padding: 2rem;
+}
+
+.history-action-container {
+  padding: 0.5rem 0;
+}
+
+.history-action-container button {
+  color: white;
+  background-color: tomato;
+  min-width: 8rem;
+}
