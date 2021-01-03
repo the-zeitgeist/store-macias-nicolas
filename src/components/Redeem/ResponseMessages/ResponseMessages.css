@@ -1,0 +1,28 @@
+.message-card {
+  margin: 1rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem #dedede;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.success-color {
+  background-color: tomato;
+}
+
+button.action-button:focus {
+  box-shadow: 0 0.2rem 0.2rem 0.2rem darkred;
+}
+
+p.redem-message {
+  font-size: 1.2rem;
+}
+
+button.return-buttons {
+  background-color: tomato;
+  color: whitesmoke;
+}

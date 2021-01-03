@@ -46,3 +46,37 @@ export const getProducts = () => (dispatch) => {
 export const clearUser = () => (dispatch) => {
   dispatch(clearUserAction());
 }
+
+
+export const redeemProduct = (productId) => async (dispatch) => {
+  const url = `${api_base}/redeem`;
+  const body = { productId }
+
+  return axios.post(url, body)
+    .then(({ data }) => data)
+    .then(({ message }) => {
+      getUser()(dispatch);
+      return message
+    })
+    .catch((err) => 'The product can not be redeemed now');
+}
+
+export const _redeemProduct = (productId) => async (dispatch) => {
+  const url = `${api_base}/redeem`;
+  const body = { productId }
+
+  let promises = [];
+
+  for (let i = 0; i < 50; i++) {
+    promises = [...promises, axios.post(url, body)];
+  }
+
+  return Promise.all(promises)
+    .then((responses) => responses.map(({data}) => data.message))
+    .then((responses) => {
+      clearUser()(dispatch);
+      getUser()(dispatch);
+      return responses
+    })
+    .catch((err) => 'The product can not be redeemed now');
+}

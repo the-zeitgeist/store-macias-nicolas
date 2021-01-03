@@ -2,6 +2,7 @@ import PurchaseImage from '../../../../assets/icons/buy-white.svg';
 import NumberFormat from '../../../Reusable/NumberFormat';
 import coin from '../../../../assets/icons/coin.svg';
 import { Link } from 'react-router-dom';
+import { router_param_base } from '../../../../constants';
 import './ActionButton.css';
 
 const ActionButton = ({ cost, hasEnough, productId }) => {
@@ -31,8 +32,8 @@ const ActionButton = ({ cost, hasEnough, productId }) => {
       </div>
     </div>
     <div className="button-container">
-      <Link to={action.linkTo}>
-        <button className="action-button" onClick={() => console.warn('click')}>
+      <Link to={`${router_param_base}${action.linkTo}`}>
+        <button className="action-button">
           {action.text}
         </button>
       </Link>

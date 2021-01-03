@@ -7,8 +7,13 @@
   justify-content: center;
 }
 
+h3.title {
+  color: #616161;
+}
+
 .card-description {
-  background-color: #ededed;
+  background-color: rgba(37, 187, 241, 0.9);
+  color: white;
   display: flex;
   padding: 1rem 5rem;
   border-radius: 1rem;
@@ -46,4 +51,8 @@
 
 .return-button {
   margin: 2rem 0;
+}
+
+.confirm-button {
+  min-width: 100px;
 }

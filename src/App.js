@@ -26,8 +26,6 @@ function App({ getUser, getProducts }) {
     })
   }, [])
 
-  console.log(user)
-
   return (
     <div>
       <Bar user={user} />

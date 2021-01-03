@@ -2,6 +2,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Badge from './Badge';
 import kite from '../../assets/aerolab-logo.svg'
 import coin from '../../assets/icons/coin.svg';
+import NavitageToHome from '../Reusable/NavitageToHome';
 import './Bar.css';
 
 const Bar = ({ user }) => {
@@ -25,7 +26,7 @@ const Bar = ({ user }) => {
 
   return (
     <div className="bar-container row">
-      <img src={kite} alt="kite" height="36" width="36" />
+      <NavitageToHome Render={() => <img src={kite} alt="kite" height="36" width="36" />} />
       <div className="row">
         {setUser()}
       </div>
