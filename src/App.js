@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getUser, getProducts } from './actions/index';
+import { getProducts } from './actions/index';
 import { connect } from 'react-redux';
 import Bar from './components/Bar/Bar';
 import Banner from './components/Banner/Banner';
@@ -8,13 +8,12 @@ import store from './store';
 import './App.css';
 
 
-function App({ getUser, getProducts }) {
+function App({ getProducts }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    getUser();
     getProducts();
-  }, [getProducts, getUser]);
+  }, [getProducts]);
 
   useEffect(() => {
     return store.subscribe(() => {
@@ -32,4 +31,4 @@ function App({ getUser, getProducts }) {
   )
 }
 
-export default connect(null, { getUser, getProducts })(App);
+export default connect(null, { getProducts })(App);
