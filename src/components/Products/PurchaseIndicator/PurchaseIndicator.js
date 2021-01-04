@@ -1,7 +1,7 @@
 import CanPurchase from './CanPurchase/CanPurchase';
 import ActionButton from './ActionButton/ActionButton';
 import WithUser from '../../HOC/WithUser';
-import WithAbsoluteContainer from '../../HOC/WithAbsoluteContainer';
+import WithAbsoluteContainer from '../../HOC/WithAbsoluteContainer/WithAbsoluteContainer';
 import './PurchaseIndicator.css';
 
 const PurchsaseBalance = ({ cost, user, isHover, productId }) => {
