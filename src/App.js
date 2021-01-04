@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { getProducts } from './actions/index';
+import { getProducts, sortProducts } from './actions/index';
 import { connect } from 'react-redux';
 import Bar from './components/Bar/Bar';
 import Banner from './components/Banner/Banner';
@@ -8,7 +8,7 @@ import store from './store';
 import './App.css';
 
 
-function App({ getProducts }) {
+function App({ getProducts, sortProducts }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -26,9 +26,9 @@ function App({ getProducts }) {
     <div>
       <Bar />
       <Banner />
-      <ProductList products={products} />
+      <ProductList products={products} sortProducts={sortProducts} />
     </div>
   )
 }
 
-export default connect(null, { getProducts })(App);
+export default connect(null, { getProducts, sortProducts })(App);

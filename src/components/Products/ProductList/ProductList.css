@@ -6,3 +6,26 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.product-list-options {
+  min-width: 80%;
+  padding: 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product-list-options button {
+  margin: 0.3rem;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #a3a3a3;
+  background-color: #ededed;
+}
+
+.product-list-options button:hover,
+.product-list-options button:focus {
+  color: white;
+  background-color: #0ad4fa;
+}

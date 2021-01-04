@@ -76,3 +76,10 @@ export const getCoins = (amount) => async (dispatch) => {
     })
     .catch((err) => 'This action cannot be completed now');
 }
+
+// sorter is inner sorter function
+export const sortProducts = (products, sorter) => dispatch => {
+  const sortedProducts = sorter(products);
+
+  dispatch(setProducts(sortedProducts));
+}
