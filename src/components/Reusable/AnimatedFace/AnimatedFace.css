@@ -2,8 +2,32 @@
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
+  z-index: 2;
   background-color: whitesmoke;
   border: 2px solid black;
+}
+
+.face-animation-container {
+  min-height: 7.5rem;
+}
+
+.shadow {
+  background-color: darkred;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 1rem;
+  position: relative;
+  top: -0.6rem;
+  z-index: 1;
+}
+
+.shadow-jump-animation {
+  animation: ShadowJump infinite 1s;
+  -webkit-animation: ShadowJump infinite 1s;
+  -moz-animation: ShadowJump infinite 1s;
+  -o-animation: ShadowJump infinite 1s;
+  -ms-animation: ShadowJump infinite 1s;
 }
 
 .jump-animation {
@@ -28,6 +52,66 @@
   -moz-animation: FaceRotation infinite 3s;
   -o-animation: FaceRotation infinite 3s;
   -ms-animation: FaceRotation infinite 3s;
+}
+
+@keyframes ShadowJump {
+  0% {
+    padding: 0.2rem 0.3rem;
+  }
+  80% {
+    padding: 0.1rem 0.15rem;
+  }
+  100% {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@-moz-keyframes ShadowJump {
+  0% {
+    padding: 0.2rem 0.3rem;
+  }
+  80% {
+    padding: 0.1rem 0.15rem;
+  }
+  100% {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@-webkit-keyframes ShadowJump {
+  0% {
+    padding: 0.2rem 0.3rem;
+  }
+  80% {
+    padding: 0.1rem 0.15rem;
+  }
+  100% {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@-o-keyframes ShadowJump {
+  0% {
+    padding: 0.2rem 0.3rem;
+  }
+  80% {
+    padding: 0.1rem 0.15rem;
+  }
+  100% {
+    padding: 0.2rem 0.3rem;
+  }
+}
+
+@-ms-keyframes ShadowJump {
+  0% {
+    padding: 0.2rem 0.3rem;
+  }
+  80% {
+    padding: 0.1rem 0.15rem;
+  }
+  100% {
+    padding: 0.2rem 0.3rem;
+  }
 }
 
 @keyframes FaceRotation {
