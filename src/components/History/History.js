@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+// import { getUser } from '../../actions/index';
+// import co
 import { paginate } from '../Reusable/Paginator';
 import NavigateToHome from '../Reusable/NavitageToHome';
 import Register from './Register/Register';
@@ -6,25 +8,38 @@ import Bar from '../Bar/Bar';
 import store from '../../store';
 import './History.css';
 
-const History = () => {
+const History = ({ getUser }) => {
   const [history, setHistory] = useState([]);
   const [records, setRecords] = useState([]);
   const [page, setPage] = useState(0);
   const [endMessage, setEndMessage] = useState(null);
 
   useEffect(() => {
-    const { user } = store.getState();
-    const redeemHistory = user?.redeemHistory ?? [];
+    const loadContent = (user) => {
+      const redeemHistory = user.redeemHistory ?? [];
+      const reversed = [...redeemHistory].reverse();
+      const firstContent = paginate({
+        dataGroup: reversed,
+        page
+      });
 
-    const reversed = [...redeemHistory].reverse();
+      setHistory(reversed)
+      setRecords(firstContent);
+    }
 
-    const firstContent = paginate({
-      dataGroup: reversed,
-      page
-    });
+    const { _user } = store.getState();
 
-    setHistory(reversed)
-    setRecords(firstContent);
+    if (!_user) {
+      return store.subscribe(() => {
+        const { user } = store.getState();
+        if (user) {
+          loadContent(user);
+        }
+
+      })
+    } else {
+      loadContent(_user)
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

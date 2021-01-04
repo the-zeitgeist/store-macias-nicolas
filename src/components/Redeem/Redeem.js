@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { redeemProduct } from '../../actions/index';
+import { redeemProduct, getProducts } from '../../actions/index';
 import { connect } from 'react-redux';
 import { calculateResult } from '../Reusable/NumberFormat';
 import NavitageToHome from '../Reusable/NavitageToHome';
@@ -12,7 +12,7 @@ import store from '../../store';
 import './Redeem.css';
 
 
-const Redeem = ({ redeemProduct }) => {
+const Redeem = ({ redeemProduct, getProducts }) => {
   const [product, setProduct] = useState(null)
   const [redimming, setRedimming] = useState(false);
   const [redeemDirty, setRedeemDirty] = useState(false);
@@ -21,10 +21,24 @@ const Redeem = ({ redeemProduct }) => {
   const { productId } = useParams();
 
   useEffect(() => {
-    const { products } = store.getState();
-    const _prod = products.find((prod) => prod._id === productId);
-    setProduct(_prod);
-  }, [productId]);
+    const assingProduct = (products) => {
+      const _prod = products.find((prod) => prod._id === productId);
+      setProduct(_prod);
+    }
+
+    const products = store.getState().products;
+    if (!products.length) {
+      getProducts();
+      return store.subscribe(() => {
+        const { products } = store.getState();
+        if (products) {
+          assingProduct(products)
+        }
+      })
+    } else {
+      assingProduct(products)
+    }
+  }, [getProducts, productId]);
 
   const redeem = async () => {
     setRedimming(true);
@@ -87,4 +101,4 @@ const Redeem = ({ redeemProduct }) => {
   )
 }
 
-export default connect(null, { redeemProduct })(Redeem);
+export default connect(null, { redeemProduct, getProducts })(Redeem);
