@@ -27,9 +27,9 @@ const History = ({ getUser }) => {
       setRecords(firstContent);
     }
 
-    const { _user } = store.getState();
+    const { user } = store.getState();
 
-    if (!_user) {
+    if (!user) {
       return store.subscribe(() => {
         const { user } = store.getState();
         if (user) {
@@ -38,7 +38,7 @@ const History = ({ getUser }) => {
 
       })
     } else {
-      loadContent(_user)
+      loadContent(user)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
