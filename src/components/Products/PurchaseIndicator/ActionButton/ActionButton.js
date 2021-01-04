@@ -12,7 +12,8 @@ const ActionButton = ({ cost, hasEnough, productId }) => {
       linkTo: `/redeem/${productId}`
     },
     Coins: {
-      text: 'Get coins'
+      text: 'Get coins',
+      linkTo: `/coins`
     }
   }
 
