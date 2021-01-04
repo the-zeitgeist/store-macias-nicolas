@@ -11,7 +11,7 @@ const PurchsaseBalance = ({ cost, user, isHover, productId }) => {
 
   return isHover ? (
     <ActionButton
-      cost={cost}
+      displayNumber={hasEnough ? cost : difference}
       hasEnough={hasEnough}
       productId={productId}
     />

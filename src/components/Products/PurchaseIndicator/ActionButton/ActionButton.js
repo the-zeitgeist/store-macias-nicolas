@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { router_param_base } from '../../../../constants';
 import './ActionButton.css';
 
-const ActionButton = ({ cost, hasEnough, productId }) => {
+const ActionButton = ({ displayNumber, hasEnough, productId }) => {
   const actionCollection = {
     Redeem: {
       text: 'Redeem now',
@@ -26,7 +26,7 @@ const ActionButton = ({ cost, hasEnough, productId }) => {
     </div>
     <div className="action-block">
       <div className="value">
-        <p><NumberFormat number={cost} /></p>
+        <p><NumberFormat number={displayNumber} /></p>
         <div className="coin-container">
           <img src={coin} alt="coin" height="30" width="30" />
         </div>
