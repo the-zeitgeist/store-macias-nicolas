@@ -40,12 +40,12 @@ const ProductList = ({ products = [], sortProducts }) => {
         <div className="navigation-options row">
           <div className="center">
             <Link to={`${router_param_base}/coins`}>
-              <button>Get coins</button>
+              <button className="link-button">Get coins</button>
             </Link>
           </div>
           <div className="center">
             <Link to={`${router_param_base}/history`}>
-              <button>Redeem history</button>
+              <button className="link-button">Redeem history</button>
             </Link>
           </div>
         </div>

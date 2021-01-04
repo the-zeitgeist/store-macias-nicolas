@@ -13,7 +13,7 @@ h3.title {
 
 .card-description {
   background-color: rgba(37, 187, 241, 0.9);
-  color: white;
+  color: whitesmoke;
   display: flex;
   flex-direction: row;
   padding: 1rem 5rem;

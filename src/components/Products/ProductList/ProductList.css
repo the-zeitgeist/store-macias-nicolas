@@ -29,3 +29,7 @@
   color: white;
   background-color: #0ad4fa;
 }
+
+button.link-button {
+  padding: 0.3rem 0.5rem;
+}
